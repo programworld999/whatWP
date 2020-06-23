@@ -1,0 +1,25 @@
+{
+  "name": "whatWP",
+  "version": "1.0",
+  "description": "Is It a WP site",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/icons/icon-72x72.png",
+      "32": "assets/icons/icon-96x96.png",
+      "128": "assets/icons/icon-128x128.png"
+    },
+    "default_title": "!whatWP"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  }
+}

@@ -1,0 +1,6 @@
+.theme-divider::before {
+  content: "sd";
+}
+.card {
+  padding: 0;
+}
