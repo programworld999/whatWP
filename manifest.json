@@ -7,7 +7,7 @@
     {
       "all_frames": true,
       "matches": ["<all_urls>"],
-      "js": ["content.js"]
+      "js": ["assets/jquery-3.4.1.js", "content.js"]
     }
   ],
   "browser_action": {
@@ -20,6 +20,10 @@
     "default_title": "!whatWP"
   },
   "background": {
-    "scripts": ["background.js"]
-  }
+    "scripts": ["assets/jquery-3.4.1.js", "background.js"]
+  },
+  "permissions": [
+    "https://jsonplaceholder.typicode.com/todos/1",
+    "https://whatwpapi.herokuapp.com/*"
+  ]
 }

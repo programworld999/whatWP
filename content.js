@@ -1,15 +1,6 @@
-// alert("content.js");
-// chrome.runtime.sendMessage({
-//   url: window.location.href,
-//   theme: "Hello",
-//   isWP: Math.floor(Math.random() * 2 + 1),
-// });
-console.log("content.js");
 chrome.runtime.sendMessage(
   {
-    url: window.location.href,
-    theme: "Hello",
-    isWP: Math.floor(Math.random() * 2 + 1),
+    site: window.location.href,
   },
   function (response) {
     if (response) {
